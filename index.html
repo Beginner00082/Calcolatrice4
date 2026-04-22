@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Anna ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- SCHERMATA LOGIN -->
+    <div class="login-screen" id="login-screen">
+        <div class="login-box">
+            <div class="heart-bg">❤️</div>
+            <h1>Area Riservata</h1>
+            <p id="login-text">Inserisci la password</p>
+            <input type="password" id="password-input" placeholder="••••••" maxlength="6">
+            <button class="login-btn" id="login-btn">Entra</button>
+            <div class="error-msg" id="error-msg"></div>
+
+            <div class="retry-box" id="retry-box">
+                <p>Password errata. Provare con un altro metodo?</p>
+                <div class="retry-buttons">
+                    <button class="retry-btn" id="retry-no">No</button>
+                    <button class="retry-btn" id="retry-yes">Sì</button>
+                </div>
+            </div>
+
+            <div class="quiz-box" id="quiz-box">
+                <p>Di che colore sono i capelli di Anna?</p>
+                <button class="quiz-btn" data-answer="A">A) Rossi 👩🏻‍🦰</button>
+                <button class="quiz-btn" data-answer="B">B) Neri 👧🏻</button>
+                <button class="quiz-btn" data-answer="C">C) Biondi 👩🏼</button>
+                <div class="error-msg" id="quiz-error"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CALCOLATRICE AMORE -->
+    <div class="calculator" id="calculator">
+        <div class="hearts">
+            <span>❤️</span><span>❤️</span><span>❤️</span>
+        </div>
+        <div class="display">
+            <div class="operation" id="operation"></div>
+            <div class="result" id="result">0</div>
+        </div>
+        <div class="buttons">
+            <button class="btn function" id="clear">AC</button>
+            <button class="btn function" id="delete">DEL</button>
+            <button class="btn function" data-operator="%">%</button>
+            <button class="btn operator" data-operator="/">÷</button>
+
+            <button class="btn" data-number="7">7</button>
+            <button class="btn" data-number="8">8</button>
+            <button class="btn" data-number="9">9</button>
+            <button class="btn operator" data-operator="*">×</button>
+
+            <button class="btn" data-number="4">4</button>
+            <button class="btn" data-number="5">5</button>
+            <button class="btn" data-number="6">6</button>
+            <button class="btn operator" data-operator="-">−</button>
+
+            <button class="btn" data-number="1">1</button>
+            <button class="btn" data-number="2">2</button>
+            <button class="btn" data-number="3">3</button>
+            <button class="btn operator" data-operator="+">+</button>
+
+            <button class="btn zero" data-number="0">0</button>
+            <button class="btn" data-number=".">.</button>
+            <button class="btn equals" id="equals">❤️</button>
+        </div>
+        <div class="footer">Fatta con amore per Anna ❤️</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+              </html>
